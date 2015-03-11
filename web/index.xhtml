@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Subscription Page</title>
+        <meta charset="utf-8"/>
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!--webfonts-->
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'/>
+        <!--//webfonts-->
+        <script>
+            function myFunction()
+            {
+                alert("Thanks for login");
+            }
+        </script>
+    </h:head>
+    <h:body>
+<!--        <h1>Enter your name and email to access web.</h1>
+        <table>
+            <h:form>
+                <tr>
+                    <td>Email: </td>
+                    <td><h:inputText id="email" value="#{indexManagedBean.email}" required="true" requiredMessage="Please enter email"/></td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td><h:inputText id="name" value="#{indexManagedBean.name}" required="true" requiredMessage="Please enter your name"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h:commandButton value="Enter">
+                            <f:ajax execute="email name" render="output nameOutput emailOutput"/>
+                        </h:commandButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><h:outputText id="output" value="#{indexManagedBean.access}" escape="false"/></td>
+                </tr>
+                <tr>
+                    <td>Name: <h:outputText id="nameOutput" value="#{indexManagedBean.name}"/></td>                    
+                </tr>
+                <tr>
+                    <td>Email: <h:outputText id="emailOutput" value="#{indexManagedBean.email}"/></td>
+                </tr>
+                
+            </h:form>-->
+            
+            <div class="main">
+                    <div class="user">
+                        <img src="images/user.png" alt="" /></div>
+                    <div class="login">
+                        <div class="inset">
+
+
+                            <div>
+                                <span>Email</span>
+                                <span><h:inputText id="email" value="#{indexManagedBean.email}" required="true" requiredMessage="Please enter email"/></span>
+                            </div>
+                            <div>
+                                <span>Your name</span>
+                                <span><h:inputText id="name" value="#{indexManagedBean.name}" required="true" requiredMessage="Please enter your name"/></span>
+                            </div>
+                            <div class="sign">
+                                <div class="submit">
+                                </div>
+                                <span class="forget-pass">
+                                    <a href="#">Forgot Password?</a>
+                                </span>
+                                <div class="clear"> </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="copy-right">
+                    <p>Template by <a href="http://w3layouts.com">w3layouts</a></p> 
+                </div>
+<!--        </table>-->
+    </h:body>
+</html>
+
